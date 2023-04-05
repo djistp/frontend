@@ -2,7 +2,8 @@ import React from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
 import {Home} from "./Home"
 import { Podcast } from './Podcast';
-import { MovieList } from './MovieList';
+import { Movielist } from './Movie/MovieList';
+
 import './App.css';
 
 
@@ -16,14 +17,14 @@ function App() {
           </li>
           <Link to="/Podcast">Podcasts</Link>
           <li>
-            <Link to="/MovieList">Movies</Link>
+            <Link to="/Movies">Movies</Link>
           </li>
         </ul>
       </nav>
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/Podcast" element={<Podcast/>} />
-        <Route path="/MovieList" element={<MovieList/>} />
+        <Route path="/Movies" element={<Movielist/>} />
       </Routes>
     
     </>
