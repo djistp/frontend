@@ -3,6 +3,7 @@ import { Link, Route, Routes } from 'react-router-dom';
 import {Home} from "./Home"
 import { Podcast } from './Podcast';
 import { Movielist } from './Movie/MovieList';
+import { MovieListt } from './MovieMission13';
 
 import './App.css';
 
@@ -15,7 +16,12 @@ function App() {
           <li>
             <Link to="/">Home</Link>
           </li>
-          <Link to="/Podcast">Podcasts</Link>
+          <li>
+          <Link to="/Podcast">Podcasts</Link>  
+          </li>
+          <li>
+            <Link to="/Mission13">Mission 13 Stuff</Link>
+          </li>
           <li>
             <Link to="/Movies">Movies</Link>
           </li>
@@ -25,6 +31,7 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/Podcast" element={<Podcast/>} />
         <Route path="/Movies" element={<Movielist/>} />
+        <Route path="/Mission13" element={<MovieListt/>} />
       </Routes>
     
     </>
